@@ -1,5 +1,8 @@
 <?php
-use Jenssegers\Blade\Blade;
+require_once __DIR__.'/../vendor/autoload.php';
+	
+	use App\Config\Config;
+	use Jenssegers\Blade\Blade;
 
 function view(string $view, array $data = []):int
 {
@@ -11,4 +14,13 @@ function view(string $view, array $data = []):int
 	}catch (Exception $e){
 		dd($e->getMessage());
 	}
+}
+
+function config(string $key,$default = null)
+{
+  return Config::$config[$key] ?? $default;
+}
+function asset($path) {
+    $baseUrl = $_SERVER['HTTP_HOST'];
+    return "http://$baseUrl/$path";
 }

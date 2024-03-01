@@ -1,0 +1,22 @@
+{
+  "name": "framwork",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev" : "npx tailwindcss -i ./resources/assets/css/app.css -o ./public/assets/css/style.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raseldev99/framwork.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raseldev99/framwork/issues"
+  },
+  "homepage": "https://github.com/raseldev99/framwork#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
